@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('content').style.opacity = '1';
                 document.body.style.overflow = 'auto'; // Restore scroll
             });
-        }, 3000); // 3000 milliseconds = 3 seconds
+        }, 10); // 3000 milliseconds = 3 seconds
     });
 });
 
