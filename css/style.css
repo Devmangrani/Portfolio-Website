@@ -45,7 +45,7 @@ ul {
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease-in-out;
 }
 .section.back-section {
     z-index: 1;
@@ -53,14 +53,16 @@ ul {
 .section.active {
     z-index: 2;
     opacity: 1;
-    animation: slideSection 1s ease;
+    animation: fadeInRight 0.5s ease;
 }
-@keyframes slideSection {
-    0%{
-        transform: translateX(100%);
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    100%{
-        transform: translateX(0%);
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 .hidden {
@@ -254,6 +256,7 @@ ul {
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--tex-black-900);
     padding: 5px 15px;
+    transition: all 0.3s ease;
 }
 .aside .nav li a.active {
     color: var(--skin-color);
@@ -306,8 +309,8 @@ h3.my-profession {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 10px;
+    bottom: -20px;
 }
 .home-img::before {
     content: '';
@@ -316,13 +319,14 @@ h3.my-profession {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+    left: -10px;
+    top: -20px;
 }
 .home .home-img img {
     margin: auto;
     border-radius: 5px;
     height: 300px;
+    padding: 10px;
 }
 /* About */
 .about .about-content {
@@ -557,44 +561,60 @@ h3.my-profession {
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    transition: all 0.35 ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .techstack .techstack-item .techstack-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--skin-color);
 }
-.techstack .techstack-item .techstack-item-inner .icon {
+.techstack .techstack-item .techstack-item-inner .techstack-img {
     height: 60px;
     width: 60px;
-    border-radius: 50%;
-    display: block;
     margin: 0 auto 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     transition: all 0.3s ease;
 }
-.techstack .techstack-item .techstack-item-inner .icon .fa {
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--skin-color);
-    transition: all 0.3s ease;
+.techstack .techstack-item .techstack-item-inner:hover .techstack-img {
+    transform: scale(1.1);
 }
-.techstack .techstack-item .techstack-item-inner:hover .icon {
-    background: var(--skin-color);
+.techstack .techstack-item .techstack-item-inner .techstack-name {
+    position: relative;
+    padding-top: 10px;
 }
-.techstack .techstack-item .techstack-item-inner:hover .icon .fa {
-    font-size: 25px;
-    color: white;
+.techstack .techstack-item .techstack-item-inner .techstack-name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--skin-color);
+    transition: width 0.3s ease;
 }
-.techstack .techstack-item .techstack-item-inner h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--tex-black-900);
-    font-weight: 700;
-    text-transform: capitalize;
+.techstack .techstack-item .techstack-item-inner:hover .techstack-name::before {
+    width: 100%;
 }
-.techstack .techstack-item .techstack-item-inner p {
-    font-size: 16px;
-    color: var(--tex-black-700);
-    line-height: 25px;
+.techstack .techstack-item .techstack-item-inner:hover .techstack-name {
+    color: var(--skin-color) !important;
+}
+/* Add a subtle pulse animation on hover */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--skin-color-rgb), 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--skin-color-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--skin-color-rgb), 0);
+    }
+}
+.techstack .techstack-item .techstack-item-inner:hover {
+    animation: pulse 1.5s infinite;
 }
 /*_______________________________Blog_______________________________*/
 .blog__elements .blog-item .blog-item-inner .blog-img .blog-text {
@@ -698,10 +718,35 @@ h3.my-profession {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.portfolio .portfolio-item-inner .portfolio-img img {
-    width: 100%;
-    display: block;
+.portfolio .portfolio-item-inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--skin-color);
+}
+.portfolio .portfolio-img {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-item-inner .project-links {
+    position: relative;
+    background: var(--bg-black-100);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+}
+.portfolio .portfolio-item-inner:hover .project-links {
+    transform: translateY(0);
+}
+.portfolio .portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-img img {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 /*_______________________________contact_______________________________*/
 .contact-title {
@@ -905,22 +950,732 @@ h3.my-profession {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; /* You can change this to any background color */
+    background-color: var(--bg-black-900);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Ensure it covers everything */
-    transition: opacity 0.1s ease; /* Short smooth transition for opacity */
-    opacity: 1; /* Initial opacity */
+    z-index: 9999;
+    transition: opacity 0.5s ease;
 }
 
 #loading-animation img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 150px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 #content {
-    display: block; /* Ensure the content is initially set to block */
-    opacity: 0; /* Initially hide the content */
-    transition: opacity 0.1s ease; /* Short smooth transition for opacity */
+    display: block;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+/* Add new home section styles */
+.home-text {
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.home-text p {
+    margin-bottom: 15px;
+    color: var(--tex-black-700);
+    font-size: 16px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--skin-color);
+    color: var(--skin-color);
+}
+
+.btn-outline:hover {
+    background: var(--skin-color);
+    color: white;
+}
+
+.img-box {
+    position: relative;
+    padding: 20px;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.img-box-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--skin-color);
+    border-radius: 20px;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+/* Enhanced navigation styles */
+.aside .nav li a {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside .nav li a:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.aside .nav li a.active {
+    background: var(--skin-color);
+    color: white;
+}
+
+.aside .nav li a i {
+    font-size: 20px;
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve section transitions */
+.section {
+    transition: all 0.4s ease-in-out;
+}
+
+.section.active {
+    animation: fadeInRight 0.5s ease;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add these new styles for the role description */
+.role-description {
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--tex-black-700);
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.role-description .highlight {
+    color: var(--skin-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.role-description .separator {
+    color: var(--tex-black-700);
+    font-weight: 300;
+    margin: 0 5px;
+}
+
+/* Update typing animation styles */
+.typing-text {
+    color: var(--skin-color);
+    font-weight: 600;
+}
+
+/* Update the typing animation in script.js */
+var typed = new Typed(".typing-text", {
+    strings: ["Web Developer", "Full Stack Developer", "Problem Solver", "Tech Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+/* Enhanced home text styles */
+.home-text p {
+    margin-bottom: 20px;
+    color: var(--tex-black-700);
+    font-size: 16px;
+    line-height: 1.8;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced button styles */
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Blog item styles */
+.blog .blog-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blog .blog-item-inner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--skin-color);
+}
+
+.blog .blog-img {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.blog .blog-item-inner .blog-links {
+    position: relative;
+    background: var(--bg-black-100);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.blog .blog-item-inner:hover .blog-img img {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.blog .blog-item-inner .blog-links h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Navbar hover effects */
+.aside .nav li a {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.aside .nav li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--skin-color);
+    transition: width 0.3s ease;
+}
+
+.aside .nav li a:hover {
+    color: var(--skin-color);
+    padding-left: 25px; /* Slight shift to right on hover */
+}
+
+.aside .nav li a:hover::before {
+    width: 100%;
+}
+
+.aside .nav li a:hover i {
+    transform: translateX(5px);
+    color: var(--skin-color);
+}
+
+.aside .nav li a i {
+    transition: transform 0.3s ease;
+}
+
+/* Active state styling */
+.aside .nav li a.active::before {
+    width: 100%;
+}
+
+.aside .nav li a.active {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+/* Logo hover effect */
+.aside .logo a {
+    transition: all 0.3s ease;
+}
+
+.aside .logo a:hover {
+    color: var(--skin-color);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.aside .logo a:hover::before,
+.aside .logo a:hover::after {
+    border-color: var(--skin-color);
+}
+
+/* Loading Animation Styles */
+.loading-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.loader .text {
+    display: flex;
+    gap: 5px;
+}
+
+.loader .text span {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--skin-color);
+    animation: bounce 0.8s ease infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.loader .dots {
+    display: flex;
+    gap: 10px;
+}
+
+.loader .dots span {
+    width: 15px;
+    height: 15px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    animation: pulse 1s ease infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+        color: white;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+/* Add animation delays to letters */
+.loader .text span:nth-child(1) { --i: 1; }
+.loader .text span:nth-child(2) { --i: 2; }
+.loader .text span:nth-child(3) { --i: 3; }
+.loader .text span:nth-child(4) { --i: 4; }
+.loader .text span:nth-child(5) { --i: 5; }
+.loader .text span:nth-child(6) { --i: 6; }
+.loader .text span:nth-child(7) { --i: 7; }
+
+/* Add animation delays to dots */
+.loader .dots span:nth-child(1) { --i: 1; }
+.loader .dots span:nth-child(2) { --i: 2; }
+.loader .dots span:nth-child(3) { --i: 3; }
+
+/* Enhanced Image Box Styles */
+.home .home-img .img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+.home .home-img .img-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.home .home-img .img-box-shape {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border: 3px solid var(--skin-color);
+    border-radius: 30px;
+    animation: morph 8s ease-in-out infinite;
+}
+
+.home .home-img .img-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.home .home-img .img-box:hover .img-box-overlay {
+    opacity: 1;
+}
+
+.home .home-img .img-box:hover img {
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.img-box:hover .social-icons a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.social-icons a:nth-child(1) { transition-delay: 0.1s; }
+.social-icons a:nth-child(2) { transition-delay: 0.2s; }
+.social-icons a:nth-child(3) { transition-delay: 0.3s; }
+
+.social-icons a:hover {
+    color: var(--skin-color);
+    transform: translateY(-5px);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes morph {
+    0%, 100% {
+        border-radius: 30px;
+        transform: rotate(0deg);
+    }
+    50% {
+        border-radius: 50% 30px 50% 30px;
+        transform: rotate(1deg);
+    }
+}
+
+/* Add responsive adjustments */
+@media (max-width: 991px) {
+    .home .home-img .img-box {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* Tech Stack Item Hover Effects */
+.techstack .techstack-item .techstack-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.techstack .techstack-item .techstack-item-inner:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--skin-color);
+}
+
+.techstack .techstack-item .techstack-item-inner .techstack-img {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.techstack .techstack-item .techstack-item-inner:hover .techstack-img {
+    transform: scale(1.1);
+}
+
+.techstack .techstack-item .techstack-item-inner .techstack-name {
+    position: relative;
+    padding-top: 10px;
+}
+
+.techstack .techstack-item .techstack-item-inner .techstack-name::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--skin-color);
+    transition: width 0.3s ease;
+}
+
+.techstack .techstack-item .techstack-item-inner:hover .techstack-name::before {
+    width: 100%;
+}
+
+.techstack .techstack-item .techstack-item-inner:hover .techstack-name {
+    color: var(--skin-color) !important;
+}
+
+/* Add a subtle pulse animation on hover */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--skin-color-rgb), 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--skin-color-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--skin-color-rgb), 0);
+    }
+}
+
+.techstack .techstack-item .techstack-item-inner:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Enhanced Timeline Styles */
+.timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background: linear-gradient(to bottom, var(--skin-color) 50%, transparent);
+}
+
+.timeline-item .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.timeline-content {
+    background: var(--bg-black-100);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--skin-color);
+    display: inline-block;
+}
+
+.timeline-date i {
+    margin-right: 5px;
+}
+
+.timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--tex-black-900);
+}
+
+.timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--tex-black-700);
+    margin-bottom: 15px;
+}
+
+.timeline-details {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.timeline-details .highlight {
+    background: var(--skin-color);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.timeline-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.timeline-tags span {
+    background: rgba(var(--skin-color-rgb), 0.1);
+    color: var(--skin-color);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 1px solid var(--skin-color);
+}
+
+/* Hover Effects */
+.timeline-item:hover .circle-dot {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px var(--skin-color);
+}
+
+.timeline-content:hover .timeline-title {
+    color: var(--skin-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .timeline-title {
+        font-size: 16px;
+    }
+    
+    .timeline-text {
+        font-size: 14px;
+    }
+}
+
+/* Update navbar styles */
+.aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--tex-black-900);
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.aside .nav li a.active {
+    color: var(--skin-color);
+}
+
+/* Hover effect */
+.aside .nav li a:hover {
+    color: var(--skin-color);
+}
+
+/* For light mode specifically */
+body:not(.dark) .aside .nav li a {
+    color: var(--tex-black-900);
+}
+
+body:not(.dark) .aside .nav li a.active {
+    color: var(--skin-color);
+    background: rgba(var(--skin-color-rgb), 0.1);
 }

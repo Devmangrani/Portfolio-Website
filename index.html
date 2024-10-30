@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Gupta</title>
+    <title>Dev Mangrani</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/Favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/Favicon.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -31,7 +30,22 @@
 
 <body>
     <div id="loading-animation" class="loading-animation">
-        <img src="https://liveimages.algoworks.com/new-algoworks/wp-content/uploads/2022/06/16052457/DevOps-Steps-1-min.gif" alt="Loading...">
+        <div class="loader">
+            <div class="text">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
 
     <div id="content" >
@@ -41,8 +55,8 @@
         <!-- Aside Start -->
         <div class="aside">
             <div class="logo">
-                <a href="#">
-                    <span>A</span>yush
+                <a href="#home" onclick="activateSection('home')">
+                    <span>D</span>ev
                 </a>
             </div>
             <div class="nav-toggler">
@@ -68,25 +82,38 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Ayush Gupta</span></h3>
-                            <h3 class="my-profession">I'm <span class="typing"></span></h3>
-                            <p>
-		👋Hey there! Welcome to my world of tech exploration and hands-on learning!🚀
-		<br>
-I'm all about diving deep into new realms, constantly exploring and expanding my horizons. 💻 Currently, I'm delving into the captivating universe of Cloud and DevOps Tools, with a keen focus on AWS. 
-		<br>
-☁️From AWS services to Linux/Bash commands, Docker containers, and Kubernetes orchestration, I'm immersing myself in it all! 🐳⚙️ But here's the kicker - I'm not just about theory and tutorials. 
-		<br>
-I firmly believe in hands-on practice and real-world projects to solidify my understanding and gain invaluable experience.🛠️ Let's connect if you're passionate about tech exploration and continuous learning like I am! 
-		<br>
-🤝 Let's swap stories, share insights, and embark on this thrilling journey together. ✨
-                            </p>
-                            <!-- <a href="https://resume.io/r/IcconLeWo" class="btn">View CV</a> -->
-							<a target="black" href="https://drive.google.com/file/d/1nC6f0S2_aojqsrC_gUjIIjXaI_ldGBUm/view?usp=sharing" class="btn" target="_blank">View CV</a>
+                            <h3 class="hello">Hello, I'm <span class="name">Dev Mangrani</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing-text"></span></h3>
+                            <div class="role-description">
+                                <span class="highlight">Full Stack Developer</span> crafting seamless web experiences
+                                <span class="separator">|</span>
+                                <span class="highlight">Problem Solver</span> turning challenges into solutions
+                                <span class="separator">|</span>
+                                <span class="highlight">Tech Enthusiast</span> exploring new possibilities
+                            </div>
+                            <div class="home-text">
+                                <p>👋 Welcome to my digital playground where code meets creativity! 🚀</p>
+                                <p>I transform ideas into reality through the power of MERN stack and Java. Whether it's building responsive web applications or solving complex algorithmic challenges, I'm always up for the adventure.</p>
+                                <p>🎯 My mission? Creating impactful solutions that make a difference while constantly pushing the boundaries of what's possible in tech.</p>
+                                <p>🌟 Let's build something amazing together!</p>
+                            </div>
+                            <div class="home-buttons">
+                                <a href="https://drive.google.com/file/d/1C0Z6XyLie0sl02sa_t3G7z4NUQaEcKQe/view?usp=sharing" class="btn" target="_blank">View CV</a>
+                                <a href="#contact" class="btn btn-outline" onclick="activateSection('contact')">Let's Connect</a>
+                            </div>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="images/portfolio/1.webp" alt="" style="border-radius: 0%; margin-top: 60px;">
-							
+                            <div class="img-box">
+                                <img src="https://assets.leetcode.com/users/devbuddy55/avatar_1726025863.png" alt="Dev Mangrani">
+                                <div class="img-box-shape"></div>
+                                <div class="img-box-overlay">
+                                    <div class="social-icons">
+                                        <a href="https://github.com/Devmangrani" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/dev-mangrani/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://twitter.com/devmangrani" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,7 +132,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>I'm Ayush Gupta and <span>A Learner</span></h3>
+                                    <h3>I'm Dev Mangrani and <span>A Learner</span></h3>
                                     <p></p>
                                 </div>
                             </div>
@@ -114,10 +141,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     <div class="row">
                                         
                                         <div class="info-item padd-15">
-                                            <p>Website : <span><a href = "https://ayush-gupta.netlify.app/">ayush-gupta.netlify.app</a></span></p>
+                                            <p>Website : <span><a href = "https://github.com/Devmangrani">Dev-Mangrani Portfolio</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Email : <span>ayushguptab6@gmail.com</span></p>
+                                            <p>Email : <span>devmangrani5@gmail.com</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Current Degree : <span>B.Tech in Computer Science</span></p>
@@ -129,8 +156,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="https://drive.google.com/file/d/1nC6f0S2_aojqsrC_gUjIIjXaI_ldGBUm/view?usp=sharing" class="btn" target="_blank">View CV</a>
-											 <!-- <a target="black"href="updation.html" class="btn">View CV</a> -->
+                                            <a href="https://drive.google.com/file/d/1C0Z6XyLie0sl02sa_t3G7z4NUQaEcKQe/view?usp=sharing" class="btn" target="_blank">View CV</a>
                                         </div>
                                     </div>
                                 </div>
@@ -142,123 +168,118 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                 </div>
                             </div>
                             <div class="row" style="margin-top: 60px;">
+                                <!-- Education Section -->
                                 <div class="education padd-15">
                                     <h3 class="title">Education</h3>
                                     <div class="row">
                                         <div class="timeline-box">
                                             <div class="timeline shadow-dark">
-                                               
-                                                <!-- timeline item -->
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021-2025
-                                                    </h3>
-                                                    <h4 class="timeline-title">B.tech in Computer Science</h4>
-                                                    <p class="timeline-text">from VELLORE INSTITUTE OF TECHNOLOGY,
-                                                        Bhopal</p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2021-2025
+                                                        </span>
+                                                        <h4 class="timeline-title">B.tech in Computer Science</h4>
+                                                        <p class="timeline-text">VELLORE INSTITUTE OF TECHNOLOGY, Bhopal</p>
+                                                        <div class="timeline-details">
+                                                            
+                                                            <span class="highlight">Core Courses: DSA, DBMS, OS, CN</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                               
-                                                <!-- timeline item -->
+                                                
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2020-2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">Senior Secondary Examination</h4>
-                                                    <p class="timeline-text">from DON BOSCO HIGH SCHOOL,
-                                                        Bihar</p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2020-2021
+                                                        </span>
+                                                        <h4 class="timeline-title">Senior Secondary Examination</h4>
+                                                        <p class="timeline-text">MILTON PUBLIC SCHOOL, AGRA</p>
+                                                        <div class="timeline-details">
+                                                           
+                                                            <span class="highlight">PCM with Computer Science</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2018-2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Class 10th</h4>
-                                                    <p class="timeline-text">from D.A.V PUBLIC SCHOOL,
-                                                        Bihar</p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2018-2019
+                                                        </span>
+                                                        <h4 class="timeline-title">Class 10th</h4>
+                                                        <p class="timeline-text">SUMMET RAHUL GOEL MEMORIAL SCHOOL, AGRA</p>
+                                                        <div class="timeline-details">
+                                                           
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Milestone Section -->
                                 <div class="experience padd-15">
-                                    <h3 class="title">Milestone</h3>
+                                    <h3 class="title">Milestones</h3>
                                     <div class="row">
                                         <div class="timeline-box">
                                             <div class="timeline shadow-dark">
-                                           
-												<!-- timeline item -->
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2024
-                                                    </h3>
-                                                    <h4 class="timeline-title">Started Cloud and DevOps Journey</h4>
-                                                    <p class="timeline-text">Started making projects and Got first DevOps internship.</p>
-                                                </div>
-										   
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2023
-                                                    </h3>
-                                                    <h4 class="timeline-title">Started Deep dived in Cloud / DevOps</h4>
-                                                    <p class="timeline-text">Cleared AWS Cloud Practioner exam with 970/1000 Marks also Passed NPTEL Cloud Computing exam offered by IIT KHARAGPUR with incredible score of 85% ranked in Elite+Silver category and ranked in Top 5% in the course. </p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2024
+                                                        </span>
+                                                        <h4 class="timeline-title">Secured a Full-Stack Developer Internship</h4>
+                                                        <p class="timeline-text">Applied my skills in Java, React.js, and Node.js to deliver solutions in real-world environments and enhanced hands-on experience with full-stack technologies.</p>
+                                                        <div class="timeline-tags">
+                                                            <span>JavaScript</span>
+                                                            <span>React</span>
+                                                            <span>Node.js</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <!-- timeline item -->
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021-22
-                                                    </h3>
-                                                    <h4 class="timeline-title">Started to Practice DSA and First internship</h4>
-                                                    <p class="timeline-text">Started with Leetcode and Got my first PAID intenship offer letter.</p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2023
+                                                        </span>
+                                                        <h4 class="timeline-title">Deep Dive into MERN and Java Development</h4>
+                                                        <p class="timeline-text">Focused on mastering MERN stack and Java, undertaking more complex projects and improving my Data Structures and Algorithms (DSA) skills.</p>
+                                                        <div class="timeline-tags">
+                                                            <span>MERN</span>
+                                                            <span>Java</span>
+                                                            <span>DSA</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <!-- timeline item -->
+                                                <!-- Timeline item -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">Exploring Engg</h4>
-                                                    <p class="timeline-text">Started with C++ and MERN Development</p>
+                                                    <div class="timeline-content">
+                                                        <span class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2021-22
+                                                        </span>
+                                                        <h4 class="timeline-title">Started DSA Journey</h4>
+                                                        <p class="timeline-text">Started with Leetcode AND Performed exceptionally well in academic courses related to software development and full-stack technologies.</p>
+                                                        <div class="timeline-tags">
+                                                            <span>LeetCode</span>
+                                                            <span>Problem Solving</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-
-                                                <!-- timeline item
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2020
-                                                    </h3>
-                                                    <h4 class="timeline-title">Online Cources during COVID</h4>
-                                                    <p class="timeline-text">Cloud Computing along with AWS, IOT, Data
-                                                        Mining</p>
-                                                </div>
-
-                                                timeline item
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Started to Learn Web Development</h4>
-                                                    <p class="timeline-text">Started with learning HTML, CSS and
-                                                        JavaScript</p>
-                                                </div>
-
-                                                timeline item -->
-                                                <!-- <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2018
-                                                    </h3>
-                                                    <h4 class="timeline-title">Started to Learn Programming</h4>
-                                                    <p class="timeline-text">Started with learning C, C++ and Java</p>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -284,10 +305,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         <div class="techstack-item padd-15 mix web">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
-                                    <img style="height: 60px; width: 60px;" src="https://cdn.iconscout.com/icon/free/png-512/free-c-57-1175191.png?f=webp&w=256" alt="C">
+                                    <img style="height: 60px; width: 60px;" src="images/JavaScript-logo.png" alt="C">
                                 </div>
                                 <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
-                                    C
+                                    JavaScript
                                 </div>
                             </div>
                         </div>
@@ -297,10 +318,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         <div class="techstack-item padd-15 mix web">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
-                                    <img style="height: 60px; width: 60px;" src="https://cdn.iconscout.com/icon/free/png-512/free-c-4-226082.png?f=webp&w=256" alt="C++">
+                                    <img style="height: 60px; width: 60px;" src="https://cdn.iconscout.com/icon/free/png-512/free-java-59-1174952.png?f=webp&w=256" alt="C++">
                                 </div>
                                 <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
-                                    C++
+                                    Java
                                 </div>
                             </div>
                         </div>
@@ -332,7 +353,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         <!-- techstack item end -->
 						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px; padding: -50%;" src="https://cdn.iconscout.com/icon/free/png-512/free-linux-3521549-2944967.png?f=webp&w=256" alt="Linux">
@@ -341,11 +362,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Linux
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
                        
                         <!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px; padding: -50%;" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" alt="GoLang">
@@ -354,7 +375,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     GoLang
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 
                     </div>
@@ -362,11 +383,40 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 					
 					 <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Cloud & DevOps Stack</h2>
+                            <h2>Java & MERN Stack</h2>
                         </div>
                     </div>
 					<div class="row techstack__elements">
                       
+
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix web">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="https://cdn.iconscout.com/icon/free/png-512/free-java-59-1174952.png?f=webp&w=256" alt="C++">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    Java
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+                         
+
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix web">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/JavaScript-logo.png" alt="C">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    JavaScript
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+                  
+                        
                         <!-- techstack item start -->
                         <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -381,7 +431,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         <!-- techstack item end -->
 						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://cdn.iconscout.com/icon/free/png-512/free-linux-3521549-2944967.png?f=webp&w=256" alt="Linux">
@@ -390,11 +440,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Linux
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
                        
                         <!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" alt="GoLang">
@@ -403,11 +453,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     GoLang
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://d33wubrfki0l68.cloudfront.net/a1da522d0a3057a1bc3fb411fcbbf57a447c1146/65e71/img/symbol/svg/full_colored_dark.svg" alt="Bash">
@@ -416,11 +466,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Bash
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://cdn.icon-icons.com/icons2/2407/PNG/512/aws_icon_146237.png" alt="AWS">
@@ -429,11 +479,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     AWS
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/docker_official_logo_icon_169250.png" alt="Docker">
@@ -442,26 +492,15 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Docker
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 
                     </div>
 					
 					<div class="row techstack__elements">
+						
 						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
-                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                                <div class="techstack-img">
-                                    <img style="height: 60px; width: 60px;" src="https://avatars.githubusercontent.com/u/44036562?s=200&v=4" alt="Github-Actions">
-                                </div>
-                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
-                                    Github Actions
-                                </div>
-                            </div>
-                        </div>
-                        <!-- techstack item end -->
-						<!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/742px-Jenkins_logo.svg.png" alt="Jenkins">
@@ -470,10 +509,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Jenkins
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
                          <!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="images\devop-stack-img\kubernets.svg" alt="Kubernetes">
@@ -482,10 +521,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Kubernetes
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
                          <!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="images\devop-stack-img\grafana.svg" alt="Grafana">
@@ -494,10 +533,10 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Grafana
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
                          <!-- techstack item start -->
-                        <div class="techstack-item padd-15 mix app">
+                        <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
                                     <img style="height: 60px; width: 60px;" src="images\devop-stack-img\terraform.svg" alt="Terraform">
@@ -506,32 +545,99 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                     Terraform
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- techstack item end -->
 						<!-- techstack item start -->
                         <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
-                                    <img style="height: 60px; width: 60px;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ansible_Logo.png" alt="Ansible">
+                                    <img style="height: 60px; width: 60px;" src="images/NODEJS.jpg" alt="Ansible">
                                 </div>
                                 <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
-                                    Ansible
+                                    Node JS
                                 </div>
                             </div>
                         </div>
                         <!-- techstack item end -->
+
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix app">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/express-js.png" alt="Ansible">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    Express JS
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+
 						<!-- techstack item start -->
                         <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                 <div class="techstack-img">
-                                    <img style="height: 60px; width: 60px;" src="https://www.svgrepo.com/show/354051/maven.svg" alt="Maven">
+                                    <img style="height: 60px; width: 60px;" src="images/react js.png" alt="Maven">
                                 </div>
                                 <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
-                                    Maven
+                                    React JS
                                 </div>
                             </div>
                         </div>
                         <!-- techstack item end -->
+
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix app">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/Typescript_logo_2020.svg.png" alt="Github-Actions">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    Type Script
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix app">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/mongo_db.png" alt="Maven">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                     Mongo DB
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+                         
+                         
+                         <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix app">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/jdbc.png" alt="Github-Actions">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    JDBC
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+
+                        <!-- techstack item start -->
+                        <div class="techstack-item padd-15 mix app">
+                            <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                <div class="techstack-img">
+                                    <img style="height: 60px; width: 60px;" src="images/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="Github-Actions">
+                                </div>
+                                <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+                                    MySQL
+                                </div>
+                            </div>
+                        </div>
+                        <!-- techstack item end -->
+                        
 						<!-- techstack item start -->
                         <!-- <div class="techstack-item padd-15 mix app">
                             <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -560,16 +666,16 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 					</div>
 					
 					
-					<div class="row">
+					<!-- <div class="row">
                         <div class="section-title padd-15">
                             <h2>AWS Services</h2>
                         </div>
                     </div>
-                    <div class="row techstack__elements">
+                    <div class="row techstack__elements"> -->
 								   
                        
                        <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg" alt="AWS EC2">
@@ -578,11 +684,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS EC2
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Compute/EC2-Auto-Scaling.svg" alt="AWS EC2 Auto Scaling">
@@ -591,11 +697,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS EC2 Auto Scaling
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Compute/Lambda.svg" alt="AWS Lambda">
@@ -604,11 +710,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS Lambda
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Database/DynamoDB.svg" alt="AWS DynamoDB">
@@ -617,11 +723,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS DynamoDB
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Machine-Learning/CodeWhisperer.svg" alt="AWS CodeWhisperer">
@@ -630,11 +736,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS CodeWhisperer
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/CloudFront.svg" alt="AWS CloudFront">
@@ -643,13 +749,13 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS CloudFront
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 </div>
 
 <div class="row techstack__elements">
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Elastic-Load-Balancing.svg" alt="AWS Elastic Load Balancing">
@@ -658,11 +764,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS Elastic Load Balancing
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Route-53.svg" alt="AWS Route-53">
@@ -671,11 +777,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS Route-53
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Virtual-Private-Cloud.svg" alt="AWS Virtual-Private-Cloud">
@@ -684,11 +790,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS Virtual-Private-Cloud
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Storage/Simple-Storage-Service.svg" alt="AWS S3">
@@ -697,11 +803,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS S3
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- techstack item end -->
 
     <!-- techstack item start -->
-    <div class="techstack-item padd-15 mix app">
+    <!-- <div class="techstack-item padd-15 mix app">
         <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <div class="techstack-img">
                 <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Management-Governance/CloudFormation.svg" alt="AWS CloudFormation">
@@ -710,12 +816,12 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                 AWS CloudFormation
             </div>
         </div>
-    </div>
+    </div> -->
                         <!-- techstack item end -->
                         
                         <div class="row techstack__elements">
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/App-Integration/API-Gateway.svg" alt="AWS API Gateway">
@@ -724,11 +830,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS API Gateway
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Management-Governance/CloudWatch.svg" alt="AWS CloudWatch">
@@ -737,11 +843,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS CloudWatch
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/App-Integration/Simple-Queue-Service.svg" alt="AWS SQS">
@@ -750,11 +856,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS SQS
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/Identity-and-Access-Management.svg" alt="AWS IAM">
@@ -763,11 +869,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS IAM
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/Secrets-Manager.svg" alt="AWS SecretsManager">
@@ -776,11 +882,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS SecretsManager
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Front-End-Web-Mobile/Amplify.svg" alt="AWS Amplify">
@@ -789,11 +895,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS Amplify
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/Cognito.svg" alt="AWS Cognito">
@@ -802,11 +908,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS Cognito
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeCommit.svg" alt="AWS CodeCommit">
@@ -815,11 +921,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS CodeCommit
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeBuild.svg" alt="AWS CodeBuild">
@@ -828,11 +934,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS CodeBuild
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeDeploy.svg" alt="AWS CodeDeploy">
@@ -841,11 +947,11 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS CodeDeploy
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         
                             <!-- techstack item start -->
-                            <div class="techstack-item padd-15 mix app">
+                            <!-- <div class="techstack-item padd-15 mix app">
                                 <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                                     <div class="techstack-img">
                                         <img style="height: 60px; width: 60px;" src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodePipeline.svg" alt="AWS CodePipeline">
@@ -854,7 +960,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                                         AWS CodePipeline
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- techstack item end -->
                         </div>
 <!-- techstack item end -->
@@ -897,7 +1003,18 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
     </div>
 </div>
 <!-- techstack item end -->
-
+<!-- techstack item start -->
+<div class="techstack-item padd-15 mix app">
+    <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="techstack-img">
+            <img style="height: 60px; width: 60px;" src="https://avatars.githubusercontent.com/u/44036562?s=200&v=4" alt="Github-Actions">
+        </div>
+        <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center;">
+            Github Actions
+        </div>
+    </div>
+</div>
+<!-- techstack item end -->
 						
                         
 
@@ -964,6 +1081,18 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                             </div> -->
                             <!-- techstack item end -->
                         
+                            <!-- techstack item start -->
+                            <div class="techstack-item padd-15 mix design">
+                                <div class="techstack-item-inner shadow-dark" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                                    <div class="techstack-img">
+                                        <img style="height: 60px; width: 60px;" src="images/tailwind css.png" alt="BootStrap">
+                                    </div>
+                                    <div class="techstack-name" style="margin-top: 10px; font-size: 14px; color: red; font-family: 'system-ui'; text-align: center;">
+                                        Tailwind CSS
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- techstack item end -->
                         
                             <!-- techstack item start -->
                             <div class="techstack-item padd-15 mix design">
@@ -1028,204 +1157,125 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                         </div>
                     </div>
                     <div class="row portfolio__elements">
-
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/devops.png" alt="">
-                                    <center>
-                                        <a target="black" href="DevOps-Projects/index.html" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-globe"></i></a>
-                                        
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-					
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/docker.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Docker-Projects" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="Docker-Projects/index.html" class="btn hire-me" style="margin-right:0px;"><i class="fa-solid fa-globe"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/aws1.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/AWS-Projects" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="AWS-Projects/index.html" class="btn hire-me" style="margin-right:0px;"><i class="fa-solid fa-globe"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-						
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/github-actions.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Github-Actions-Projects" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                       
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-						
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/golang.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/GoLang-Codes" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                       
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-						
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/linux1.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Learning-Linux" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                       
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-					
-						<!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/shell-scripts.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Shell-Scripts" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                       
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-					
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix web">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/14daysofJavaScript.png" alt=""
-                                        style="max-height: 1440px;">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/14DaysOfJavascript" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="https://14daysofjs.netlify.app/" class="btn hire-me" style="margin-right:0px;"><i class="fa-solid fa-globe"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-                      
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix web">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/Portfolio.jpg" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Portfolio" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="https://harshthakkar.netlify.app/" class="btn hire-me" style="margin-right:0px;"><i
-                                                class="fa-solid fa-globe"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-                      
-                       
-                       
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/CryptoHunter.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Crypto-Hunter" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="https://crypto-hunter.netlify.app/" class="btn hire-me" style="margin-right:0px;"><i
-                                                class="fa-solid fa-globe"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-                       
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15 mix app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/projects/HospitalManagementSystem.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/Hospital-Management-System" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item end -->
-                       
-                        <!-- portfolio item start -->
+                        <!-- Portfolio item start -->
                         <div class="portfolio-item padd-15 mix design">
-                            <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://job-sewa.vercel.app/', '_blank')" style="cursor: pointer;">
                                 <div class="portfolio-img">
-                                    <img src="images/projects/AllFilesExchanger.png" alt="">
-                                    <center>
-                                        <a target="black" href="https://github.com/Harsh971/All-Files-Extension-Changer" class="btn hire-me"
-                                            style="margin-right:0px; margin-top: 10px; margin-bottom: 10px;"><i
-                                                class="fa-solid fa-code"></i></a>
-                                        <a target="black" href="https://www.youtube.com/watch?v=nx-j6gA58O4&feature=youtu.be" class="btn hire-me" style="margin-right:0px;"><i
-                                                class="fa-solid fa-globe"></i></a>
-                                    </center>
+                                    <img src="images/jobsewa.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">JobSewa</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/JobSewa" class="btn hire-me" 
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                            <a target="black" href="https://job-sewa.vercel.app/" class="btn hire-me" 
+                                                onclick="event.stopPropagation();" style="margin-right:0px;"><i
+                                                    class="fa-solid fa-globe"></i></a>
+                                        </center>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- portfolio item end -->
+                        <!-- Portfolio item end -->
 
+                         <!-- Portfolio item start -->
+                         <div class="portfolio-item padd-15 mix design">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://job-sewa.vercel.app/', '_blank')" style="cursor: pointer;">
+                                <div class="portfolio-img">
+                                    <img src="images/home-section.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">Portfolio Website</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/JobSewa" class="btn hire-me" 
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                            <a target="black" href="https://job-sewa.vercel.app/" class="btn hire-me" 
+                                                onclick="event.stopPropagation();" style="margin-right:0px;"><i
+                                                    class="fa-solid fa-globe"></i></a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15 mix design">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://github.com/Devmangrani/AirlineManagementSystem', '_blank')" style="cursor: pointer;">
+                                <div class="portfolio-img">
+                                    <img src="images/airlinemanagementsystem.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">Airline Management System</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/AirlineManagementSystem" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15 mix design">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://devmangrani.github.io/Weather-App-Project/', '_blank')" style="cursor: pointer;">
+                                <div class="portfolio-img">
+                                    <img src="images/weaterapp.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">Weather App</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/Weather-App-Project" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                            <a target="black" href="https://devmangrani.github.io/Weather-App-Project/" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px;"><i
+                                                    class="fa-solid fa-globe"></i></a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15 mix design">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://rate-mate.vercel.app/', '_blank')" style="cursor: pointer;">
+                                <div class="portfolio-img">
+                                    <img src="images/Ratemate.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">Rate Mate</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/RateMate" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                            <a target="black" href="https://rate-mate.vercel.app/" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px;"><i
+                                                    class="fa-solid fa-globe"></i></a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
+
+                        <!-- Portfolio item start -->
+                        <div class="portfolio-item padd-15 mix design">
+                            <div class="portfolio-item-inner shadow-dark" onclick="window.open('https://github.com/Devmangrani/Bank-Loan-Analysis-using-PowerBI', '_blank')" style="cursor: pointer;">
+                                <div class="portfolio-img">
+                                    <img src="images/bankloan.png" alt="" style="height: 200px; width: 400px; object-fit: cover;">
+                                    <div class="project-links">
+                                        <h3 style="color: var(--tex-black-900); margin-bottom: 15px; text-align: center;">Bank Loan Analysis</h3>
+                                        <center>
+                                            <a target="black" href="https://github.com/Devmangrani/Bank-Loan-Analysis-using-PowerBI" class="btn hire-me"
+                                                onclick="event.stopPropagation();" style="margin-right:0px; margin-bottom: 10px;"><i
+                                                    class="fa-solid fa-code"></i></a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item end -->
                     </div>
                 </div>
             </section>
@@ -1235,107 +1285,77 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 
             <!-- Blogs Section Start -->
             <section class="blog section" id="blog">
-		
-				
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Blogs & Notions</h2>
                         </div>
                     </div>
-					<div class="row blog__elements">
-
-						<!-- blog item start -->
-                        <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <a target="black" href="https://www.linkedin.com/pulse/how-secure-your-cloud-infrastructure-best-practices-2024-thakkar-zadef/?trackingId=YK5ppksTSUGt3fJGb1DbqQ%3D%3D">
-                                        <img class="blogimg" src="https://media.licdn.com/dms/image/D4D12AQHUVOSl_b2ciQ/article-cover_image-shrink_423_752/0/1718564221006?e=1724284800&v=beta&t=pWuADRTt_tjbEl7b04EU42Esowk2sZUMfPbI2x8Isp4" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog item end -->
-						
-                        <!-- blog item start -->
-                        <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <a target="black" href="https://www.linkedin.com/pulse/essential-devops-technologies-professional-harsh-thakkar-x61kf/?trackingId=KsBWrc2QQZaknkQbxq00jg%3D%3D">
-                                        <img class="blogimg" src="https://media.licdn.com/dms/image/D4D12AQEi4lT6rNOanQ/article-cover_image-shrink_720_1280/0/1718130103849?e=1724284800&v=beta&t=oG9KIsXsP7EkrH-81BDk5_32gQrrwnvXCwW1qaAFZns" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog item end -->
-
-                        									
-
-                    </div>
-					<div class="row blog__elements">
-
-						<!-- blog item start -->
-                        <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <a target="black" href="https://harshthakkar971.hashnode.dev/essential-aws-services-for-cloud-devops">
-                                        <img class="blogimg" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1717919460865/626f686a-0678-4e35-9c76-c99824d7d0dd.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog item end -->
-						
-                        <!-- blog item start -->
-                        <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <a target="black" href="https://harsh-thakkar.notion.site/AWS-Certified-Cloud-Practitioner-1844f161031e46e5aed3c42fb12fc514?pvs=74">
-                                        <img class="blogimg" src="images/notions/AWS-CP.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog item end -->
-
-                        									
-
-                    </div>
                     <div class="row blog__elements">
-
-                        <!-- blog item start -->
+                        <!-- Blog item start -->
                         <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
+                            <div class="blog-item-inner shadow-dark" onclick="window.open('https://www.notion.so/devmangrani/Computer-Networking-d6ff6497f46b4d9d81675a7749a39c4a?pvs=4', '_blank')" style="cursor: pointer;">
                                 <div class="blog-img">
-                                    <a target="black" href="https://harshthakkar971.hashnode.dev/learning-blockchain-technology-from-scratch-a-beginners-guide">
-                                        <img class="blogimg" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676452478468/891b3a8a-cb3f-4d47-823f-a3c2e6c9e4e4.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt=""></a>
+                                    <img class="blogimg" src="images/CN images.jpeg" alt="Computer Network Image">
+                                    <div class="blog-links">
+                                        <h3 style="color: var(--tex-black-900); margin: 15px 0; text-align: center;">Computer Networking</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- blog item end -->
+                        <!-- Blog item end -->
 
-                         <!-- blog item start -->
-                         <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <a target="black" href="https://harshthakkar971.hashnode.dev/top-10-tips-to-ace-data-structures-algorithms">
-                                        <img class="blogimg" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676808599170/0beba68e-59d4-40d4-94a6-817c471e0809.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog item end -->									
-
-                    </div>
-					
-					<div class="row blog__elements">
-
-                        <!-- blog item start -->
+                        <!-- Blog item start -->
                         <div class="blog-item padd-15 mix web">
-                            <div class="blog-item-inner shadow-dark">
+                            <div class="blog-item-inner shadow-dark" onclick="window.open('https://www.notion.so/devmangrani/DSA-Notes-61d0c7b663c9438ea24c44d1a64b67f8?pvs=4', '_blank')" style="cursor: pointer;">
                                 <div class="blog-img">
-                                    <a target="black" href="https://harshthakkar971.hashnode.dev/7-mistakes-you-should-avoid-as-a-programmer">
-                                        <img class="blogimg" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1678731141210/aa496b49-52b3-4bb8-b034-86707b402454.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt=""></a>
+                                    <img class="blogimg" src="images/DSA.png" alt="">
+                                    <div class="blog-links">
+                                        <h3 style="color: var(--tex-black-900); margin: 15px 0; text-align: center;">DSA Notes</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- blog item end -->
-						
+                        <!-- Blog item end -->
+
+                        <!-- Blog item start -->
+                        <div class="blog-item padd-15 mix web">
+                            <div class="blog-item-inner shadow-dark" onclick="window.open('https://www.notion.so/devmangrani/Node-Js-96fde6c2791546ab84172b4871a062a8?pvs=4', '_blank')" style="cursor: pointer;">
+                                <div class="blog-img">
+                                    <img class="blogimg" src="images/nodejs notes.webp" alt="">
+                                    <div class="blog-links">
+                                        <h3 style="color: var(--tex-black-900); margin: 15px 0; text-align: center;">Node.js</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog item end -->
+
+                        <!-- Blog item start -->
+                        <div class="blog-item padd-15 mix web">
+                            <div class="blog-item-inner shadow-dark" onclick="window.open('https://www.notion.so/devmangrani/React-Js-a190b7a02e2e42f482b1a7a2cbd0c5d0?pvs=4', '_blank')" style="cursor: pointer;">
+                                <div class="blog-img">
+                                    <img class="blogimg" src="images/react notes.png" alt="">
+                                    <div class="blog-links">
+                                        <h3 style="color: var(--tex-black-900); margin: 15px 0; text-align: center;">React.js</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog item end -->
+
+                        <!-- Blog item start -->
+                        <div class="blog-item padd-15 mix web">
+                            <div class="blog-item-inner shadow-dark" onclick="window.open('https://medium.com/@devkumarmangrani/mastering-mern-stack-and-dsa-in-java-a-developers-journey-c72d7a64ddb6', '_blank')" style="cursor: pointer;">
+                                <div class="blog-img">
+                                    <img class="blogimg" src="images/Developer Journey.png" alt="">
+                                    <div class="blog-links">
+                                        <h3 style="color: var(--tex-black-900); margin: 15px 0; text-align: center;">Developer Journey</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog item end -->
                     </div>
                 </div>
             </section>
@@ -1357,7 +1377,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                       
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
-                            <a target="black" href="https://x.com/hypo_sucks">
+                            <a target="black" href="https://x.com/devmangrani">
                             <div class="icon"><i class="fa fa-brands fa-twitter"></i></div>                            
                                 <h4>Twitter</h4>
                             </a>
@@ -1367,7 +1387,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
-                            <a target="black" href="https://www.linkedin.com/in/ayushgupta-333bg/">
+                            <a target="black" href="https://www.linkedin.com/in/dev-mangrani/">
                             <div class="icon"><i class="fa fa-brands fa-linkedin"></i></div>                            
                                 <h4>LinkedIn</h4>
                             </a>
@@ -1377,7 +1397,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
-                            <a target="black" href="https://github.com/ayushhh321">
+                            <a target="black" href="https://github.com/Devmangrani">
                             <div class="icon"><i class="fa fa-brands fa-github"></i></div>
                                 <h4>GitHub</h4>
                             </a>
@@ -1388,7 +1408,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
 
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item padd-15">
-                            <a target="black" href="https://cal.com/ayush-gupta-3qikly">
+                            <a target="black" href="https://cal.com/Dev-Mangrani">
                             <div class="icon"><i class="fa fa-solid fa-handshake"></i></div>
                                 <h4>Book a Meet</h4>
                             </a>
@@ -1402,7 +1422,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
                             <!-- Contact Form -->
                             <div class="row">
                                 <div class="contact-form padd-15">
-                                    <form action="https://formspree.io/f/xjkbbqqv" method="post">
+                                    <form action="https://formspree.io/f/xovagwvn" method="post">
                                     <div class="row">
                                         <div class="form-item col-6 padd-15">
                                             <div class="form-group">
@@ -1465,11 +1485,7 @@ I firmly believe in hands-on practice and real-world projects to solidify my und
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
     <script src="js/mixitup.min.js"></script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-        data-id="harshthakkar971" data-description="Support me on Buy me a coffee!" data-message="" Enjoying my work? If
-        you'd like to support me and help me keep creating, you can now buy me a coffee! Your support means the world to
-        me and helps me continue to improve my skills and bring you even better content. Thank you so much for your
-        support!"" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+   
 </div>
 </body>
 </html>

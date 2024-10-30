@@ -1,10 +1,10 @@
 /* typing animation */
-var typed = new Typed(".typing",{
-    strings:["","a Tech Enthusiast","an Explorer","a Learner"],
-    typeSpeed:100,
-    BackSpeed:60,
-    loop:true
-})
+var typed = new Typed(".typing-text", {
+    strings: ["Web Developer", "Full Stack Developer", "Problem Solver", "Tech Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     // Wait for the entire page to load including images and styles
@@ -103,4 +103,39 @@ const nav = document.querySelector(".nav"),
         // Run the updateViewCount function when the page loads
         document.addEventListener('DOMContentLoaded', (event) => {
             updateViewCount();
+        });
+
+        // Add this function to handle section activation
+        function activateSection(sectionId) {
+            // Remove active class from all nav items
+            document.querySelectorAll('.nav a').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Add active class to the corresponding nav item
+            document.querySelector(`.nav a[href="#${sectionId}"]`).classList.add('active');
+            
+            // Remove active class from all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Add active class to the target section
+            document.querySelector(`#${sectionId}`).classList.add('active');
+            
+            // If on mobile, close the sidebar
+            if(window.innerWidth < 1200) {
+                asideSectionTogglerBtn();
+            }
+        }
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
