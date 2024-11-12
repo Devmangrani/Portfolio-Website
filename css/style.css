@@ -832,55 +832,29 @@ h3.my-profession {
 @media(max-width:1199px){
     .aside{
         left: -270px;
-        transition: all 0.3s ease;
-        z-index: 999;
     }
-    
     .aside.open {
         left: 0;
-        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     }
-    
     .aside .nav-toggler {
         display: flex;
         left: 30px;
-        transition: all 0.3s ease;
-        z-index: 1000;
     }
-    
     .aside .nav-toggler.open {
         left: 300px;
     }
-    
-    .section {
+    .section{
         left: 0;
-        transition: all 0.3s ease;
     }
-    
-    /* Remove the transform on section to prevent content shift */
     .section.open {
-        filter: blur(3px);
-        pointer-events: none;
+        left: 270px;
     }
-    
-    /* Add overlay for mobile menu */
-    .nav-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 998;
+    .about .about-content .personal-info .info-item p span {
+        display: block;
     }
-    
-    .nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
+	.blogimg {
+		height:240px; width:400px;
+	}	
 }
 @media(max-width:991px){
     .portfolio .portfolio-item,
@@ -1704,25 +1678,4 @@ body:not(.dark) .aside .nav li a {
 body:not(.dark) .aside .nav li a.active {
     color: var(--skin-color);
     background: rgba(var(--skin-color-rgb), 0.1);
-}
-
-/* Add smooth scrolling for mobile */
-@media (max-width: 767px) {
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    .section {
-        overflow-x: hidden;
-    }
-    
-    /* Improve touch scrolling */
-    .section {
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    /* Enhance mobile nav items */
-    .aside .nav li a {
-        padding: 12px 15px;
-    }
 }

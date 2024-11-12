@@ -9,7 +9,7 @@ var typed = new Typed(".typing-text", {
 document.addEventListener("DOMContentLoaded", function() {
     // Wait for the entire page to load including images and styles
     window.addEventListener("load", function() {
-        // Ensure the loading animation stays for at least 3 seconds
+        // Reduced loading time from 3 seconds to 1 second
         setTimeout(function() {
             // Start the fade-out transition
             document.getElementById('loading-animation').style.opacity = '0';
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('content').style.opacity = '1';
                 document.body.style.overflow = 'auto'; // Restore scroll
             });
-        }, 3000); // 3000 milliseconds = 3 seconds
+        }, 300); // Reduced to 1000 milliseconds (1 second) from 3000
     });
 });
 
@@ -71,56 +71,13 @@ const nav = document.querySelector(".nav"),
             asideSectionTogglerBtn()
         })
         function asideSectionTogglerBtn() {
-            const aside = document.querySelector(".aside");
-            const navToggler = document.querySelector(".nav-toggler");
-            const sections = document.querySelectorAll(".section");
-            const overlay = document.querySelector(".nav-overlay");
-            
             aside.classList.toggle("open");
-            navToggler.classList.toggle("open");
-            
-            sections.forEach((section) => {
-                section.classList.toggle("open");
-            });
-            
-            // Toggle overlay
-            overlay.classList.toggle("active");
-            
-            // Prevent body scroll when menu is open
-            document.body.style.overflow = aside.classList.contains("open") ? "hidden" : "";
+            navTogglerBtn.classList.toggle("open");
+            for(let i=0; i<totalSection; i++)
+            {
+                allSection[i].classList.toggle("open");
+            }
         }
-
-        // Add click handler for overlay
-        document.querySelector(".nav-overlay").addEventListener("click", () => {
-            asideSectionTogglerBtn();
-        });
-
-        // Close menu when clicking nav items on mobile
-        document.querySelectorAll(".nav li a").forEach(link => {
-            link.addEventListener("click", () => {
-                if (window.innerWidth <= 1199) {
-                    asideSectionTogglerBtn();
-                }
-            });
-        });
-
-        // Handle resize events
-        window.addEventListener("resize", () => {
-            if (window.innerWidth > 1199) {
-                // Reset mobile menu state when returning to desktop
-                const aside = document.querySelector(".aside");
-                if (aside.classList.contains("open")) {
-                    asideSectionTogglerBtn();
-                }
-            }
-        });
-
-        // Prevent touchmove when menu is open on mobile
-        document.addEventListener("touchmove", (e) => {
-            if (document.querySelector(".aside").classList.contains("open")) {
-                e.preventDefault();
-            }
-        }, { passive: false });
 
 
 		
